@@ -7,7 +7,9 @@ variable "sample_var" {
 
 variable "sensitive_var" {
   description = "A sensitive var to pass to the template."
-  default     = "I am Sensitivie"  
+  default     = "I am Sensitivie"
+  sensitive = true
+  
 }
 
 variable "sleepy_time" {

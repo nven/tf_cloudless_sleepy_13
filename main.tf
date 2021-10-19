@@ -8,11 +8,12 @@
 
 # Create an arbitrary local resource
 data "template_file" "test" {
-  template = "Hello, I am a template. My sample_var value = $${sample_var} and my sensitive value is = $${sensitive_var}"
+  template = "Hello, I am a template. My sample_var value = $${sample_var} and my sensitive value is = $${sensitive_var} and complex type is $${simple_list_element}"
 
   vars = {
     sample_var = var.sample_var
-   sensitive_var = var.sensitive_var
+    sensitive_var = var.sensitive_var
+    simple_list_element = var.complex_type[0]
   }
 }
 

@@ -22,6 +22,11 @@ variable "TF_VERSION" {
   default     = 0.13
 }
 
+variable "complex_type" {
+  description = "List type"
+  type = list(string)
+}
+
 variable "aws_access_key" {
   description  = "AWS access key"
   type         = string

@@ -32,6 +32,11 @@ variable "aws_secret_key" {
   type         = string
 }
 
+variable "in_master_branch" {
+  description  = "AWS secret key"
+  type         = string
+}
+
 variable "aws_region" {
   description  = "AWS region"
   type         = string

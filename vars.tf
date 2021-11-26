@@ -17,6 +17,11 @@ variable "sleepy_time" {
   default     = 0
 }
 
+variable "in_master_branch" {
+  description = "How long our local-exec will take a nap."
+  default     = 0
+}
+
 variable "TF_VERSION" {
   description = "terraform version."
   default     = 0.13
